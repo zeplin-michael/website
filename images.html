@@ -8,19 +8,22 @@
 		</style>
     </head>
     <body>
-    	<div id="text">
+        <ul class="navigation">
+            <li><a href="index.html">Google Search</a></li>
+            <li><a href="advanced.html">Advanced Search</a></li>
+        </ul>
 
-            <a class="index" href="index.html">Google Search</a>
+        <div>
+            <center>
+                <img src="google-logo.png" alt="The Google Logo">
+                Images
 
-            <a class="adv" href="advanced.html">Advanced Search</a>
-
-            <img src="google-logo.png" alt="The Google Logo">
-            <span class="subtitle" >Images</span>         
-
-        	<form action="https://www.google.com/imghp">
-            	<input type="text" name="q">
-            	<input type="submit" value="Image Search">
-        	</form>
+                <form action="https://www.google.com/search">
+                    <input type="hidden" name="tbm" value="isch">                    
+                    <input type="text" name="q">
+                    <input type="submit" value="Image Search">
+                </form>
+            </center>
         </div>	
     </body>
 </html>

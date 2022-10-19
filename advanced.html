@@ -5,41 +5,45 @@
         <link rel="stylesheet" type="text/css" href="advanced.css">
         <style>
 			@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-			
-			#text{
-				font-family: 'Roboto', sans-serif;
-				text-align: center;
-			}
-
 		</style>
     </head>
     <body>
-    	<div id="text">
+        <ul>
+            <li><a class="index" href="index.html">Google Search</a></li>
+            <li><a class="img" href="advanced.html">Image Search</a></li>
+        </ul>
 
-            <a href="index.html">
-                <img src="google-logo.png" alt="The Google Logo">
-            </a>
+        <h1 class="title">Advanced Search</h1>
 
-    		<h1 class="title">Advanced Search</h1>
+        <div>
+            <form action="https://www.google.com/search">
+                <table class="advanced_input">
+                    <tr>
+                        <td>All these words</td>
+                        <td><input type="text" name="as_q"></td>
+                    </tr>
 
-            <a class="img" href="advanced.html">Image Search</a>
+                    <tr>
+                        <td>this exact word or phrase</td>
+                        <td><input type="text" name="as_epq"></td>
+                    </tr>
 
-            <p class="a">All these words</p>
-            <p class="b">this exact word or phrase</p>
-            <p class="c">any of these words</p>
-            <p class="d">none of these words</p>         
+                    <tr>
+                        <td>any of these words</td>
+                        <td><input type="text" name="as_oq"></td>
+                    </tr>
 
-        	<form action="https://www.google.com/search">
-            	<input class="bar" type="text" name="q">
+                    <tr>
+                        <td>none of these words</td>
+                        <td><input type="text" name="as_eq"></td>
+                    </tr>
 
-                <input class="bar" type="text" name="q">
-
-                <input class="bar" type="text" name="q">
-
-                <input class="bar" type="text" name="q">
-
-                <input type="submit" value="Google Search">
-        	</form>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Advanced Search"></td>
+                    </tr>
+                </table>
+            </form>
         </div>	
     </body>
 </html>
